@@ -1,0 +1,43 @@
+# Python
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# MkDocs
+site/
+.cache/
+
+# Конвертированные файлы (уже перенесены в docs/)
+converted/
+test_converted/
+
+# Временные файлы
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Логи
+*.log
+conversion.log
+files_list.txt
+
+# Архивы
+*.tar.gz
+*.zip
+
+# Скрипты конвертации (уже использованы)
+convert_docs.sh
+test_conversion.sh
+reorganize.py
+content_mapping.yaml

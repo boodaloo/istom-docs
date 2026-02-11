@@ -1,0 +1,260 @@
+site_name: iStom - База знаний
+site_description: Документация по программе iStom для стоматологических клиник и медицинских центров
+site_author: iStom Team
+
+# Repository (опционально - можно добавить позже)
+# repo_name: istom/docs
+# repo_url: https://github.com/your-org/istom-docs
+# edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+
+  # Цветовая схема
+  palette:
+    # Светлая тема
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на тёмную тему
+
+    # Тёмная тема
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+
+  # Иконки и логотип
+  icon:
+    logo: material/tooth
+    repo: fontawesome/brands/github
+
+  # Функции
+  features:
+    - navigation.instant        # Мгновенная загрузка
+    - navigation.instant.progress  # Прогресс загрузки
+    - navigation.tracking       # Отслеживание в URL
+    - navigation.tabs           # Вкладки навигации
+    - navigation.tabs.sticky    # Закреплённые вкладки
+    - navigation.sections       # Секции в боковой панели
+    - navigation.expand         # Развернуть все разделы
+    - navigation.path           # Хлебные крошки
+    - navigation.indexes        # Индексные страницы
+    - navigation.top            # Кнопка "Наверх"
+    - navigation.footer         # Навигация в футере
+    - toc.follow                # Оглавление следует за прокруткой
+    - toc.integrate             # Интегрировать оглавление
+    - search.suggest            # Подсказки при поиске
+    - search.highlight          # Подсветка результатов
+    - search.share              # Кнопка "Поделиться"
+    - content.code.copy         # Кнопка копирования кода
+    - content.code.annotate     # Аннотации в коде
+    - content.tabs.link         # Связанные вкладки
+    - content.tooltips          # Всплывающие подсказки
+
+# Плагины
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - awesome-pages
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+
+# Расширения Markdown
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Ссылка на этот раздел
+      toc_depth: 3
+
+  # PyMdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Дополнительные CSS/JS
+extra_css:
+  - stylesheets/extra.css
+
+# Дополнительная конфигурация
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://istom.ru
+      name: Официальный сайт iStom
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/istom_support
+      name: Telegram поддержка
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@istom.ru
+      name: Email поддержка
+
+  # Аналитика (опционально)
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+
+# Копирайт
+copyright: Copyright &copy; 2024-2026 iStom. Все права защищены.
+
+# Структура навигации
+nav:
+  - Главная: index.md
+
+  - Начало работы:
+    - getting-started/index.md
+    - Системные требования: getting-started/requirements.md
+    - Установка программы: getting-started/installation.md
+    - Демо-версия: getting-started/demo.md
+    - Лицензирование: getting-started/licensing.md
+    - Первые шаги: getting-started/first-steps.md
+    - Облако vs Локально: getting-started/cloud-vs-local.md
+
+  - Модули:
+    - modules/index.md
+
+    - Расписание:
+      - modules/schedule/index.md
+      - Настройка: modules/schedule/settings.md
+      - Запись пациентов: modules/schedule/appointments.md
+      - График работы: modules/schedule/working-hours.md
+
+    - Карта пациента:
+      - modules/patients/index.md
+      - Медицинская карта: modules/patients/patient-card.md
+      - План лечения: modules/patients/treatment-plan.md
+      - Формула зубов: modules/patients/dental-formula.md
+      - ОМС и ДМС: modules/patients/insurance.md
+      - Поручительство: modules/patients/guarantors.md
+      - Баланс пациента: modules/patients/balance.md
+
+    - Финансы:
+      - modules/finance/index.md
+      - Касса: modules/finance/cashier.md
+      - Счета: modules/finance/invoices.md
+      - Реестр счетов: modules/finance/invoice-registry.md
+      - Кассовый аппарат: modules/finance/cash-register.md
+
+    - Документы:
+      - modules/documents/index.md
+      - Медицинская карта: modules/documents/medical-card.md
+      - ИДС: modules/documents/informed-consent.md
+      - Заказ-наряд: modules/documents/work-order.md
+      - Печать: modules/documents/printing.md
+
+    - Отчеты:
+      - modules/reports/index.md
+      - Ведомости врача: modules/reports/doctor-reports.md
+      - Статистика: modules/reports/statistics.md
+      - Форма 037-у: modules/reports/form-037.md
+      - Годовой отчет: modules/reports/annual-report.md
+
+    - Склад:
+      - modules/warehouse/index.md
+      - Учет материалов: modules/warehouse/materials.md
+      - Остатки: modules/warehouse/inventory.md
+
+    - Лаборатория:
+      - modules/lab/index.md
+      - Работа с ЗТЛ: modules/lab/lab-workflow.md
+
+    - CRM:
+      - modules/crm/index.md
+      - Программа лояльности: modules/crm/loyalty.md
+      - Лист ожидания: modules/crm/waiting-list.md
+      - SMS-рассылки: modules/crm/sms.md
+
+  - Интеграции:
+    - integrations/index.md
+
+    - Мобильное приложение:
+      - integrations/mobile-app/index.md
+      - Где скачать: integrations/mobile-app/download.md
+      - Подключение: integrations/mobile-app/setup.md
+      - Функции: integrations/mobile-app/features.md
+
+    - Телефония:
+      - integrations/telephony/index.md
+      - Stream: integrations/telephony/stream.md
+      - Mango Office: integrations/telephony/mango.md
+      - UIS: integrations/telephony/uis.md
+
+    - Облачное хранилище:
+      - integrations/cloud/index.md
+      - Яндекс.Диск: integrations/cloud/yandex-disk.md
+      - Доступ: integrations/cloud/access.md
+
+    - Внешние системы:
+      - Экспорт в 1С: integrations/external-systems/1c-export.md
+      - Экспорт в Excel: integrations/external-systems/excel-export.md
+
+  - Настройка:
+    - configuration/index.md
+    - Организация: configuration/organization.md
+    - Персонал: configuration/staff.md
+    - Врачи: configuration/doctors.md
+    - Права доступа: configuration/permissions.md
+    - Зарплата: configuration/salary.md
+
+  - База данных:
+    - database/index.md
+    - Резервное копирование: database/backup.md
+    - Экспорт данных: database/export.md
+    - Импорт данных: database/import.md
+
+  - Решение проблем:
+    - troubleshooting/index.md
+    - Ошибки SQL: troubleshooting/sql-errors.md
+    - Проблемы с расписанием: troubleshooting/schedule-issues.md
+    - Проблемы с кассой: troubleshooting/cashier-issues.md
+
+  - Для медцентров:
+    - for-medical-centers/index.md
+
+  - Юридическое:
+    - Публичная оферта: legal/offer.md
+    - Регламент: legal/regulations.md

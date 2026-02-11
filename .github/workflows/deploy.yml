@@ -1,0 +1,55 @@
+name: Deploy Documentation
+
+# Запускается при push в ветку main
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Позволяет запускать вручную
+
+# Разрешения для публикации на GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Нужно для git info plugin
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-awesome-pages-plugin
+          pip install mkdocs-minify-plugin
+
+      - name: Build documentation
+        run: mkdocs build --verbose
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
