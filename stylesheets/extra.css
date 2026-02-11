@@ -1,0 +1,83 @@
+/* Дополнительные стили для iStom документации */
+
+/* Карточки на главной странице */
+.md-typeset .grid.cards > * {
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .grid.cards > *:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Улучшенные таблицы */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Улучшенные admonitions */
+.md-typeset .admonition {
+  border-radius: 8px;
+}
+
+/* Кастомные цвета для разных типов контента */
+.md-typeset .admonition.tip {
+  border-left-color: #00c853;
+}
+
+.md-typeset .admonition.warning {
+  border-left-color: #ff6d00;
+}
+
+.md-typeset .admonition.info {
+  border-left-color: #2196f3;
+}
+
+/* Улучшенные кнопки */
+.md-button {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Логотип и брендинг */
+.md-header__title {
+  font-weight: 600;
+}
+
+/* Улучшенная типографика */
+.md-typeset h1 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Разделители */
+.md-typeset hr {
+  margin: 2rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Код блоки */
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset .grid.cards {
+    grid-template-columns: 1fr;
+  }
+}
