@@ -113,5 +113,4 @@ istom-docs/
 ## 📞 Контакты
 
 - Email: support@istom.ru
-- Telegram: @istom_support
-- Сайт: https://istom.ru
+- Сайт: https://i-stom.ru
