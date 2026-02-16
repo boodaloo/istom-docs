@@ -75,7 +75,14 @@
   border-radius: 6px;
 }
 
-/* Изображения в документации */
+/* Изображения в документации - ВРЕМЕННО СКРЫТЫ из-за низкого качества */
+.md-content img,
+.md-typeset img,
+.md-typeset p img {
+  display: none !important;
+}
+
+/* Когда будут картинки хорошего качества, раскомментируйте это:
 .md-content img,
 .md-typeset img,
 .md-typeset p img {
@@ -87,6 +94,7 @@
   margin: 1.5rem auto;
   display: block;
 }
+*/
 
 /* Для мобильных устройств */
 @media screen and (max-width: 768px) {
