@@ -75,6 +75,22 @@
   border-radius: 6px;
 }
 
+/* Изображения в документации */
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+/* Для больших экранов ограничим максимальную ширину */
+@media screen and (min-width: 76.1875em) {
+  .md-typeset img {
+    max-width: 800px;
+  }
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 76.1875em) {
   .md-typeset .grid.cards {

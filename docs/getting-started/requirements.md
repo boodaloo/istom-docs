@@ -8,7 +8,7 @@
 
 ---
 
-![\1](../images/media/image1.png){width="5.21875in" height="1.7708333333333333in"}
+![\1](../images/media/image1.png)
 
 Минимальные технические требования
 
@@ -28,7 +28,7 @@
 
 ---
 
-![\1](../images/media/image2.jpeg){width="4.0625in" height="2.4479166666666665in"}
+![\1](../images/media/image2.jpeg)
 
 > Для запуска на компьютерах Apple Mac Os X:
 >
