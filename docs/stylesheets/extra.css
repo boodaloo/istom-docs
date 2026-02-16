@@ -76,18 +76,32 @@
 }
 
 /* Изображения в документации */
-.md-typeset img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.md-content img,
+.md-typeset img,
+.md-typeset p img {
+  width: 600px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 1rem 0;
+  margin: 1.5rem auto;
+  display: block;
 }
 
-/* Для больших экранов ограничим максимальную ширину */
-@media screen and (min-width: 76.1875em) {
+/* Для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .md-content img,
   .md-typeset img {
-    max-width: 800px;
+    min-width: unset;
+    max-width: 100% !important;
+  }
+}
+
+/* Для больших экранов */
+@media screen and (min-width: 76.1875em) {
+  .md-content img,
+  .md-typeset img {
+    max-width: 800px !important;
   }
 }
 
