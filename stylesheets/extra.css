@@ -75,6 +75,44 @@
   border-radius: 6px;
 }
 
+/* Изображения в документации - ВРЕМЕННО СКРЫТЫ из-за низкого качества */
+.md-content img,
+.md-typeset img,
+.md-typeset p img {
+  display: none !important;
+}
+
+/* Когда будут картинки хорошего качества, раскомментируйте это:
+.md-content img,
+.md-typeset img,
+.md-typeset p img {
+  width: 600px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem auto;
+  display: block;
+}
+*/
+
+/* Для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .md-content img,
+  .md-typeset img {
+    min-width: unset;
+    max-width: 100% !important;
+  }
+}
+
+/* Для больших экранов */
+@media screen and (min-width: 76.1875em) {
+  .md-content img,
+  .md-typeset img {
+    max-width: 800px !important;
+  }
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 76.1875em) {
   .md-typeset .grid.cards {
