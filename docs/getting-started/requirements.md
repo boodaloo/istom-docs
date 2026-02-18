@@ -4,8 +4,6 @@
 
 ---
 
-![\1](../images/media/image1.png)
-
 Минимальные технические требования
 
 • Intel Pentium 4 или более быстрые x86 или х64-разрядный процессор.
@@ -21,8 +19,6 @@
 • 1GB of RAM (2GB of RAM recommended).
 
 ---
-
-![\1](../images/media/image2.jpeg)
 
 > Для запуска на компьютерах Apple Mac Os X:
 >
