@@ -182,6 +182,7 @@ nav:
       - modules/documents/index.md
       - Медицинская карта: modules/documents/medical-card.md
       - ИДС: modules/documents/informed-consent.md
+      - Шаблоны документов: modules/documents/templates.md
       - Заказ-наряд: modules/documents/work-order.md
       - Печать: modules/documents/printing.md
 
@@ -196,6 +197,7 @@ nav:
       - modules/warehouse/index.md
       - Учет материалов: modules/warehouse/materials.md
       - Остатки: modules/warehouse/inventory.md
+      - Потребители: modules/warehouse/consumers.md
 
     - Лаборатория:
       - modules/lab/index.md
@@ -214,6 +216,7 @@ nav:
       - integrations/mobile-app/index.md
       - Где скачать: integrations/mobile-app/download.md
       - Подключение: integrations/mobile-app/setup.md
+      - Требования: integrations/mobile-app/requirements.md
       - Функции: integrations/mobile-app/features.md
 
     - Телефония:
@@ -226,6 +229,7 @@ nav:
       - integrations/cloud/index.md
       - Яндекс.Диск: integrations/cloud/yandex-disk.md
       - Доступ: integrations/cloud/access.md
+      - Перенос данных: integrations/cloud/migration.md
 
     - Внешние системы:
       - Экспорт в 1С: integrations/external-systems/1c-export.md
@@ -257,6 +261,13 @@ nav:
     - Ошибки SQL: troubleshooting/sql-errors.md
     - Проблемы с расписанием: troubleshooting/schedule-issues.md
     - Проблемы с кассой: troubleshooting/cashier-issues.md
+    - Ярлык программы не работает: troubleshooting/shortcut-not-working.md
+    - Программа на планшете: troubleshooting/tablet-connection.md
 
   - Для медцентров:
     - for-medical-centers/index.md
+    - Использование iStom в медцентре: for-medical-centers/usage.md
+
+  - Юридическое:
+    - Публичная оферта: legal/offer.md
+    - Регламент поддержки: legal/regulations.md
