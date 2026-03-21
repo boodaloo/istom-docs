@@ -150,9 +150,11 @@ nav:
     - Лицензирование: getting-started/licensing.md
     - Первые шаги: getting-started/first-steps.md
     - Облако vs Локально: getting-started/cloud-vs-local.md
+    - Обозначение кнопок: getting-started/ui-buttons.md
 
   - Модули:
     - modules/index.md
+    - Обзор всех модулей: modules/overview.md
 
     - Расписание:
       - modules/schedule/index.md
@@ -228,6 +230,13 @@ nav:
     - Внешние системы:
       - Экспорт в 1С: integrations/external-systems/1c-export.md
       - Экспорт в Excel: integrations/external-systems/excel-export.md
+
+    - ПроДокторов.ру:
+      - Интеграция: integrations/prodoctors/index.md
+
+    - МДЛП (Честный знак):
+      - Настройка: integrations/mdlp/setup.md
+      - Работа с МДЛП: integrations/mdlp/workflow.md
 
   - Настройка:
     - configuration/index.md
