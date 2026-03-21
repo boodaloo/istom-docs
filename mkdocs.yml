@@ -239,6 +239,7 @@ nav:
       - Интеграция: integrations/prodoctors/index.md
 
     - МДЛП (Честный знак):
+      - integrations/mdlp/index.md
       - Настройка: integrations/mdlp/setup.md
       - Работа с МДЛП: integrations/mdlp/workflow.md
 
