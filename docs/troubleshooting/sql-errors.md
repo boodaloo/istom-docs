@@ -10,7 +10,7 @@
 
 - Пуск -- В поиске находим "SQL Server Configuration Manager" (на вашем ПК название может отличаться из-за различия в версии, поэтому не обращаем на это внимание, пишем в поиске "SQL", открываем Configuration Manager).
 
-- В окне SQL Server Configuration Manager находим и нажимает на SQL Server Services, затем в правой части находим необходимый нам SQL Server (Имя сервера) и, если в столбике State значение для нашей службы "Stopped", нажимаем правой кнопкой мыши на строке с нашим сервером и запускаем службу, нажав в контекстном меню «Start», как показано на рисунке ниже.![\1](../images/media/image1.png)
+- В окне SQL Server Configuration Manager находим и нажимает на SQL Server Services, затем в правой части находим необходимый нам SQL Server (Имя сервера) и, если в столбике State значение для нашей службы "Stopped", нажимаем правой кнопкой мыши на строке с нашим сервером и запускаем службу, нажав в контекстном меню «Start», как показано на рисунке ниже.![](../images/extracted/SQL_испр.ошибки/image1.png)
 
 
 ---
@@ -29,33 +29,33 @@
 
           Слева выбираем «Правила для входящих подключений», затем сверху «Действие» и «Создать правило».
 
-![\1](../images/media/image1.png)
+![](../images/extracted/SQL_испр.ошибки/image1.png)
 
-![\1](../images/media/image2.png)
+![](../images/extracted/SQL_настр_вх_исх/image1.png)
 
 Тип правила
 
-![\1](../images/media/image3.png)
+![](../images/extracted/SQL_настр_вх_исх/image2.png)
 
 Протокол и порты
 
-![\1](../images/media/image4.png)
+![](../images/extracted/SQL_настр_вх_исх/image3.png)
 
 Действие
 
-![\1](../images/media/image5.png)
+![](../images/extracted/SQL_настр_вх_исх/image4.png)
 
 Профиль
 
-![\1](../images/media/image6.png)
+![](../images/extracted/SQL_настр_вх_исх/image5.png)
 
 Имя
 
-![\1](../images/media/image7.png)
+![](../images/extracted/SQL_настр_вх_исх/image6.png)
 
           Нажимаем «Готово» и создаем правило ещё раз точно также, НО!!! На шаге «Протокол и порты» выбираем «Протокол UDP», а также на шаге «Имя» пишем «SQL Server (UDP)». Далее необходимо перейти в «*Правила для исходящего подключения*» на панели слева и таким же образом, как и для входящих подключений, создать два правила, одно из которых будет для протокола TCP, второе -- для UDP.
 
-![\1](../images/media/image8.png)
+![](../images/extracted/SQL_настр_вх_исх/image7.png)
 
 
 ---
