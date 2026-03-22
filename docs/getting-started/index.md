@@ -44,5 +44,5 @@ iStom — программа для управления стоматологи�
 ## Нужна помощь?
 
 - [Решение проблем](../troubleshooting/index.md) — если что-то не работает
+- Телефон: [+7 (499) 685-49-75](tel:+74996854975) — Пн-Пт с 10:00 до 19:00 (МСК)
 - Email: [support@istom.ru](mailto:support@istom.ru)
-- Telegram: [@istom_support](https://t.me/istom_support)

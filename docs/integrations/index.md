@@ -71,5 +71,5 @@ iStom поддерживает интеграцию с различными вн
 
 Обратитесь в техническую поддержку для настройки интеграций:
 
+- :material-phone: [+7 (499) 685-49-75](tel:+74996854975) — Пн-Пт с 10:00 до 19:00 (МСК)
 - :material-email: support@istom.ru
-- :material-telegram: [@istom_support](https://t.me/istom_support)
