@@ -144,12 +144,13 @@ nav:
 
   - Начало работы:
     - getting-started/index.md
-    - Системные требования: getting-started/requirements.md
-    - Установка программы: getting-started/installation.md
     - Демо-версия: getting-started/demo.md
+    - Требования к ПК: getting-started/requirements.md
+    - Облако или локально: getting-started/cloud-vs-local.md
+    - Установка программы: getting-started/installation.md
     - Лицензирование: getting-started/licensing.md
-    - Первые шаги: getting-started/first-steps.md
-    - Облако vs Локально: getting-started/cloud-vs-local.md
+    - Работа в локальной сети: getting-started/local-network.md
+    - Первоначальная настройка: getting-started/first-steps.md
     - Обозначение кнопок: getting-started/ui-buttons.md
 
   - Модули:
