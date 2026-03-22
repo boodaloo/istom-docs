@@ -233,6 +233,7 @@ nav:
       - Перенос данных: integrations/cloud/migration.md
 
     - Внешние системы:
+      - integrations/external-systems/index.md
       - Экспорт в 1С: integrations/external-systems/1c-export.md
       - Экспорт в Excel: integrations/external-systems/excel-export.md
 
