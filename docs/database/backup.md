@@ -8,8 +8,8 @@
 
 Инструкция только для локальных установок, так как для тех, кто использует облачное хранение, резервное копирование происходит автоматически и ежедневно.
 
-Видео-инструкция: <https://www.youtube.com/watch?v=08YpZV8zfuU>\
-\
+Видео-инструкция: <https://www.youtube.com/watch?v=08YpZV8zfuU>
+
 Письменная пошаговая инструкция: <https://docs.microsoft.com/ru-ru/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2017>
 
 [Как сделать бэкап базы MSSQL](https://www.youtube.com/watch?v=08YpZV8zfuU)
