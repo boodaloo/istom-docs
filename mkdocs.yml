@@ -199,6 +199,7 @@ nav:
       - Учет материалов: modules/warehouse/materials.md
       - Остатки: modules/warehouse/inventory.md
       - Потребители: modules/warehouse/consumers.md
+      - Продажи с витрины: modules/warehouse/showcase-sales.md
 
     - Лаборатория:
       - modules/lab/index.md
@@ -244,6 +245,17 @@ nav:
       - integrations/mdlp/index.md
       - Настройка: integrations/mdlp/setup.md
       - Работа с МДЛП: integrations/mdlp/workflow.md
+
+    - ЕГИСЗ:
+      - integrations/egisz/index.md
+      - Настройка: integrations/egisz/setup.md
+      - Отправка данных о приёме: integrations/egisz/workflow.md
+
+    - WhatsApp:
+      - Напоминания о приёме: integrations/whatsapp/index.md
+
+    - LoyalMed:
+      - Система лояльности: integrations/loyalmed/index.md
 
   - Настройка:
     - configuration/index.md
