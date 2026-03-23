@@ -140,7 +140,7 @@ copyright: Copyright &copy; 2024-2026 iStom. Все права защищены.
 
 # Структура навигации
 nav:
-  - Главная: index.md
+  # - Главная: index.md
 
   - Начало работы:
     - getting-started/index.md
@@ -153,7 +153,7 @@ nav:
     - Первоначальная настройка: getting-started/first-steps.md
     - Обозначение кнопок: getting-started/ui-buttons.md
 
-  - Модули:
+  - Работа в программе:
     - modules/index.md
     - Обзор всех модулей: modules/overview.md
 
