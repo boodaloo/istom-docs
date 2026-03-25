@@ -124,7 +124,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/solid/globe
-      link: https://istom.ru
+      link: https://i-stom.ru/
       name: Официальный сайт iStom
     - icon: fontawesome/solid/envelope
       link: mailto:support@istom.ru
