@@ -62,6 +62,92 @@
 
 <br><br>
 
+<table border="1" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="background-color: #FFF3CD; padding: 12px; text-align: left;">
+        <mark><strong>Вкладка «Данные — врач»</strong> – заполняется данными врача, осуществляющего приём:</mark>
+      </th>
+      <th style="background-color: #E6F7FF; padding: 12px; text-align: left;">
+        <mark><strong>Вкладка «Данные – пользователь ЕГИСЗ»</strong> – заполняется личными данными сотрудника, осуществляющего отправку данных о приёме:</mark>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Врач, ФИО</strong> – изменяется в выпадающем меню (если активный пользователь авторизован под у/з администратора);
+      </td>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Пользователь, ФИО</strong> – изменяется в выпадающем меню (если активный пользователь авторизован под у/з администратора);
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Врач, СНИЛС №</strong> – значение в поле изменяется и сохраняется в личную информацию врача (при отсутствии значения – оно заполняется вручную и, по кнопке «Сохранить для врача», сохраняется в личную информацию врача);
+      </td>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Пользователь, СНИЛС №</strong> – значение в поле изменяется и сохраняется в личную информацию врача/сотрудника, осуществляющего отправку данных.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Кнопка «Сохранить для врача»</strong> – для сохранения/изменения номера СНИЛС врача из данной формы в базе.
+      </td>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Должность</strong> – изменяется в выпадающем меню (по умолчанию "Врач‑стоматолог");<br><br>
+        <div style="background-color: #FFF3E0; border-left: 4px solid #FF9800; padding: 8px; margin: 8px 0;">
+          <strong>ВАЖНО</strong><br>Список должностей аналогичен списку должностей во вкладке «Данные — врач».
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Должность</strong> – изменяется в выпадающем меню (по умолчанию "Врач‑стоматолог");<br>
+        <img src="../../images/extracted/ЕГИСЗ/image14.png" alt="Изображение 14" style="max-width: 100%; height: auto; margin: 8px 0;"><br>
+        <div style="background-color: #FFEBEE; border-left: 4px solid #F44336; padding: 8px; margin: 8px 0;">
+          <strong>ВАЖНО</strong><br>В поле «Должность» должна быть указана корректная специализация врача — такая же, как указана в Федеральном Регистре Медицинских Работников (ФРМР) у этого сотрудника.
+        </div>
+      </td>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Специальность</strong> – заполняется автоматически, если в настройках ЕГИСЗ вы не выставили галочку «Разрешить специальности врачей» (по умолчанию «Стоматология (код 3)»).<br><br>
+        Список специальностей ниже:<br>
+        <img src="../../images/extracted/ЕГИСЗ/image15.png" alt="Изображение 15" style="max-width: 100%; height: auto; margin: 8px 0;">
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Специальность</strong> – заполняется автоматически, если в настройках ЕГИСЗ вы не выставили галочку «Разрешить специальности врачей» (по умолчанию «Стоматология (код 3)»).<br><br>
+        <div style="background-color: #E8F5E8; border-left: 4px solid #4CAF50; padding: 8px; margin: 8px 0;">
+          Список специальностей аналогичен списку специальностей во вкладке «Данные – пользователь ЕГИСЗ».
+        </div>
+      </td>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Кнопка «Задать по умолч.»</strong> – позволяет сохранить указанного врача/сотрудника как осуществляющего отправку данных по умолчанию.<br>
+        Заданный врач/сотрудник будет отображаться осуществляющим отправку и для остальных пациентов.<br>
+        <div style="background-color: #E8F5E8; border-left: 4px solid #4CAF50; padding: 8px; margin: 8px 0;">
+          Выбор можно изменить: выбрать другого врача/сотрудника, затем нажать кнопку «Задать по умолч.».
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Врач (сертификат) ФИО</strong> – ФИО врача, указанного в сертификате
+      </td>
+      <td style="padding: 12px; vertical-align: top;"></td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; vertical-align: top;">
+        <strong>Чек‑бокс «Не использовать подпись организации»</strong> — использовать в случае, если вы не хотите подписывать документ от имени организации.
+      </td>
+      <td style="padding: 12px; vertical-align: top;"></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br><br>
+
 ## **Блок результатов приёма:**
 
 ![](../../images/extracted/ЕГИСЗ/image16.png)
