@@ -248,8 +248,9 @@ nav:
 
     - ЕГИСЗ:
       - integrations/egisz/index.md
-      - Настройка: integrations/egisz/setup.md
-      - Отправка данных о приёме: integrations/egisz/workflow.md
+      - Настройка модуля ЕГИСЗ: integrations/egisz/setup.md
+      - Отправка данных о приёме пациента: integrations/egisz/workflow-adult.md
+      - Отправка данных о приёме несовершеннолетнего пациента: integrations/egisz/workflow-child.md
 
     - WhatsApp:
       - Напоминания о приёме: integrations/whatsapp/index.md
