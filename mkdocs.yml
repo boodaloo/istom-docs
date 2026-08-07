@@ -255,6 +255,9 @@ nav:
     - WhatsApp:
       - Напоминания о приёме: integrations/whatsapp/index.md
 
+    - MAX:
+      - Напоминания о приёме: integrations/max/index.md
+
     - LoyalMed:
       - Система лояльности: integrations/loyalmed/index.md
 
